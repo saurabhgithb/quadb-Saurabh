@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import NotFound from "./NotFound";
+import noImage from "/no-image.jpg";
 
 // show details about the selected show
 const ShowDetails = () => {
@@ -34,7 +35,7 @@ const ShowDetails = () => {
   return (
     <>
       {show && (
-        <div className="min-h-lvh max-w-6xl bg-slate-900 flex flex-col md:flex-row text-white items-center justify-center mx-auto w-[90%] gap-10 mb-6">
+        <div className="mt-4 md:mt-0 min-h-lvh max-w-6xl bg-slate-900 flex flex-col md:flex-row text-white items-center justify-center mx-auto w-[90%] gap-10 mb-6">
           {show && (
             <>
               <div className=" flex justify-end">
@@ -47,7 +48,7 @@ const ShowDetails = () => {
                 ) : (
                   <img
                     className="h-80 md:h-[28rem] w-auto rounded-b-xl md:rounded-xl"
-                    src="public/no-image.jpg"
+                    src={noImage}
                     alt=""
                   />
                 )}

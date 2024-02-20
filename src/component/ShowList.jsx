@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import noImage from "/no-image.jpg";
 
 // displays the list of shows in form of grid
 const ShowList = ({ shows }) => {
@@ -20,7 +21,7 @@ const ShowList = ({ shows }) => {
                   ) : (
                     <img
                       className="w-full h-full rounded-xl object-cover object-bottom"
-                      src="/no-image.jpg"
+                      src={noImage}
                       alt=""
                     />
                   )}
