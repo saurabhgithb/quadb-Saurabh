@@ -20,7 +20,7 @@ const ShowList = ({ shows }) => {
                   ) : (
                     <img
                       className="w-full h-full rounded-xl object-cover object-bottom"
-                      src="/src/assets/no-image.jpg"
+                      src="/no-image.jpg"
                       alt=""
                     />
                   )}

@@ -18,7 +18,7 @@ function App() {
   }, []);
   return (
     <>
-      <Router>
+      <Router basename="quadb-Saurabh">
         <Appbar />
         <Routes>
           <Route path="/" element={<ShowList shows={shows} />} />

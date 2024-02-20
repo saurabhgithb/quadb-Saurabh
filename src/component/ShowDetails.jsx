@@ -47,7 +47,7 @@ const ShowDetails = () => {
                 ) : (
                   <img
                     className="h-80 md:h-[28rem] w-auto rounded-b-xl md:rounded-xl"
-                    src="/src/assets/no-image.jpg"
+                    src="public/no-image.jpg"
                     alt=""
                   />
                 )}
